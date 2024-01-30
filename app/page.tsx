@@ -13,17 +13,17 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+    <div className="text-black min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
       <div className="bg-white p-8 w-3/5 rounded-md text-center">
         <h1 className="text-4xl font-bold mb-4">Quentinhas do Grau</h1>
         <Select
           label="Menus Disponíveis"
           placeholder="Selecione um Menu"
-          className="max-w-xs"
+          className="text-black max-w-xs"
           onChange={(e) => menuChange(e.target.value)}
         >
           {Menus.map((Menu) => (
-            <SelectItem key={Menu.title} value={Menu.title}>
+            <SelectItem className="text-black" key={Menu.title} value={Menu.title}>
               {Menu.title}
             </SelectItem>
           ))}
